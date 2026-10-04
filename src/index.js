@@ -7,7 +7,7 @@ dotenv.config();
 const discordToken = process.env.DISCORD_TOKEN;
 
 const client = new Client({
-	intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages],
+	intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
 	partials: [Partials.Message, Partials.Channel],
 });
 

@@ -314,6 +314,11 @@ const lateKeywords = [
 	"på vei, men sen",
 	"på vei, men sein",
 	"på vei, men forsinka",
+
+	"min sein",
+	"min sen",
+	"min forsinka",
+	"min forsinket",
 ];
 
 module.exports = {lateKeywords};

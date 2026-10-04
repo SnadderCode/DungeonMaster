@@ -11,6 +11,8 @@ async function handleLateMessage(message) {
 
 	if (!(await personIsLate(lowerCaseContent))) return;
 
+  console.log(`Detected a late message from ${message.author.tag}: "${message.content}"`);
+
 	const replyMessage = lateReplyMessages[Math.floor(Math.random() * lateReplyMessages.length)];
 
 	await message.reply(replyMessage);
